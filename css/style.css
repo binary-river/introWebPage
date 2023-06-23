@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    background-attachment:fixed;
+}
+
+.hdn {
+    display:none;
+}
+
+
+.handwriting {
+    font-family : 'Lucida Handwriting', 'Comic Sans MS','Bradley Hand', cursive, 'Courier New', Courier, monospace
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.header {
+    padding:30px;
+    text-align : center;
+    font-size: 25px;
+    color : beige;  
+}
+
+.header p{
+    font-size:17px;
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    height:300px;
+    color : beige;
+}
+
+.column.side {
+    -webkit-flex:3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.column.middle {
+    -webkit-flex:2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: center;
+}
+
+.column.middle ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.column.middle li {
+    display: block;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.input-container {
+    /* position: relative; */
+    margin-bottom: 20px;
+  }
+  
+  .fancy-input {
+    font-size: 25px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid beige;
+    background-color: transparent;
+    padding: 5px;
+    color: beige;
+    width: 25%;
+  }
+  
+  .fancy-input:focus {
+    outline: none;
+    border-bottom: 2px solid beige; 
+  }
+
+  .weather{
+    text-align : right;
+    font-size: 17px;
+  }
+  
