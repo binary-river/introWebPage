@@ -10,6 +10,7 @@
         <script src="./js/todos.js"></script>
         <script src="./js/login.js"></script>
         <script src="./js/weather.js"></script>
+        <script src="./js/music.js"></script>
         <script>
 
             document.addEventListener("DOMContentLoaded", () => {
@@ -47,9 +48,13 @@
                 //weather
                 const weatherDiv = document.getElementById("weather");
                 console.log(weatherDiv)
-                navigator.geolocation.getCurrentPosition((geo) => {
-                    onGeoSuccess(geo, weatherDiv);
-                }, onGeoFail);
+                // navigator.geolocation.getCurrentPosition((geo) => {
+                //     onGeoSuccess(geo, weatherDiv);
+                // }, onGeoFail);
+
+                //music
+                const musicDiv = document.getElementById("music");
+                musicDiv.innerHTML = getMusicEmbededFrame();
                 
             } );
         </script>
@@ -60,6 +65,8 @@
             <div class="header">
                 <div id="weather" class="weather">
                     <span name="g"></span> <span name="w"></span>
+                </div>
+                <div id="music" class="music">
                 </div>
                 <h1 id="clock"> 00:00:00 </h1>
                 <h1 class="handwriting" id="greeting"> Hola! </h1>
